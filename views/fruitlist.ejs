@@ -1,0 +1,32 @@
+
+<h1>The Fruits are</h1>
+
+
+<hr>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price #</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    
+    <% for (fruit of fruits){%>
+      <tr class="mb-2"> 
+        <td> <img src=<%=fruit.image %> alt="fruit"> </td>
+        <td> <%=fruit.name %>  </td>
+        <td> <%=fruit.price %>  </td>
+        <td> <input type="number" name="a"> </td>
+        <td> <a href="/exam10c/2/<%=fruit.price %>"> Price</a> </td>
+    </tr>
+    <% } %>
+    
+    </tbody>
+</table>
+
+
+
